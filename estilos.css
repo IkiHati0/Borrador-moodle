@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .texto{
     width: 85%;
     height: auto;
@@ -143,4 +144,151 @@ img{
     background: inherit;
   }
     
+=======
+.texto{
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+    height: 800px;
+    background-image: linear-gradient(180deg, transparent 45%, rgb(255, 255, 255) 85%), url(img/ejemplo.jpg);
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 6px;
+    font-size: 1.1em;
+}
+
+.rectan{
+    width: 400px;
+    margin: 20px;
+    position: relative;
+    /* clip-path: polygon(24% 1%, 1% 22%, 0% 76%, 27% 100%, 100% 100%, 54% 40%, 71% 0%); */
+    /* clip-path: polygon(16% -16%, 0% 18%, 0% 85%, 10% 100%, 100% 100%, 100% 15%, 100% 0%) ; */
+    /* clip-path: inset(5px round 40px 40px 0 40px); */
+    background: linear-gradient(360deg, #2ec7d6 0, #00b0c7 40%,#004fdd 100%);
+    filter: url(#round);
+    z-index: 0;
+}
+
+.rectan::before{
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    bottom: -20px;
+    right: -180px;
+    width: 250px;
+    height: 160px;
+    clip-path:polygon(12.5% 12.5%, 12.5% 87.5%, 87.5% 87.5%);
+    background: linear-gradient(360deg, #2ec7d6 10%, #00b0c7 50%,#004ddd 100%);
+    z-index: 1;
+}
+
+/* .rectan::after{
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    right: -175px;
+    width: 200px;
+    height: 160px;
+    clip-path:circle(40%);
+    background: #ffffff 100%;
+    z-index: 2;
+} */
+
+
+img{
+    width: 200px;
+    height: auto;
+    padding-bottom: 60px;
+    padding-left: -90px;
+}
+
+.oval{
+    width: 600px;
+    height: 145px;
+    margin: 20px;
+    position: relative;
+    /* clip-path: polygon(24% 1%, 1% 22%, 0% 76%, 27% 100%, 100% 100%, 54% 40%, 71% 0%); */
+    /* clip-path: polygon(16% -16%, 0% 18%, 0% 85%, 10% 100%, 100% 100%, 100% 15%, 100% 0%) ; */
+    /* clip-path: inset(5px round 40px 40px 0 40px); */
+    background: linear-gradient(360deg, #2ec7d6 0, #00b0c7 40%,#004fdd 100%);
+    filter: url(#round);
+    z-index: 0;
+}
+
+.oval::before{
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    bottom: -20px;
+    left: -190px;
+    width: 250px;
+    height: 160px;
+    clip-path:polygon(87.5% 12.5%, 12.5% 87.5%, 87.5% 87.5%);
+    background: linear-gradient(360deg, #2ec7d6 10%, #00b0c7 50%,#004ddd 100%);
+    z-index: 1;
+}
+
+.texto1{
+    width: 85%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+/* .box {
+    width: 201px;
+    height: 200px;
+    background: red;
+    margin: 100px auto;
+    filter: url(#round);
+    position:relative;
+  }
+  .box::before,
+  .box::after {
+     content:"";
+     position:absolute;
+     border-radius:50%;
+     width:100px;
+     height:100px;
+     bottom:40px;
+     background: inherit;
+     left:-40px;
+  }
+  .box::after {
+    right:-40px;
+    left:auto;
+  }
+  .box div {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+    background: inherit;
+  }
+    
+>>>>>>> 49bb7f9fe0fb0735afeb28f2f0dc24c82f0bb24b
   } */
